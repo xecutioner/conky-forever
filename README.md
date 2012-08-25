@@ -7,7 +7,10 @@ My Conky Setting!
 * conky
 * lua
 * python
-* fonts 
+
+## Fonts
+
+> fonts 
 >> MarVoSym
 >> PizzaDude Bullets
 >> Poky
