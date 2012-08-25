@@ -8,15 +8,15 @@ My Conky Setting!
 * lua
 * python
 * fonts 
-** MarVoSym
-** PizzaDude Bullets
-** Poky
-** TSCu_Comic
-** Ubuntu
-** Ubuntu Condensed
-** Weather
-** Yytrium Dioxide
-** Zero Velocity BRK
+>> MarVoSym
+>> PizzaDude Bullets
+>> Poky
+>> TSCu_Comic
+>> Ubuntu
+>> Ubuntu Condensed
+>> Weather
+>> Yytrium Dioxide
+>> Zero Velocity BRK
 
 
 ## Up & Running
