@@ -1,0 +1,97 @@
+#
+# cheatsheet
+# by Rho <rho.rhoit@gmail.com>
+# 
+#
+
+
+# process
+	total_run_times 0 #run conky forever
+	background no #daemon
+
+# position
+	alignment top_left
+	gap_x 15
+	gap_y 160
+	maximum_width 350
+	minimum_size 350
+
+# engine
+	double_buffer yes #reduces flicker
+	text_buffer_size 256 #performance
+	update_interval 1
+	no_buffers yes #Subtract from used memory
+	# imlib_cache_size 0 #Force images redraw on change.
+
+# window manager
+	own_window_class conky
+	own_window_title cheetsheet
+
+	own_window_transparent yes
+	own_window_argb_visual no # no for semi transpancy
+	own_window_argb_value 128
+
+	own_window yes #required in Desktop Environment
+	own_window_type normal
+	own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+# window
+	draw_borders no
+	border_width 1
+	draw_graph_borders yes
+	draw_outline no
+	draw_shades yes
+	border_inner_margin 10
+
+#conky console
+	out_to_console no
+	out_to_stderr no
+	out_to_ncurses no
+	extra_newline no
+
+#sample
+	#cpu_avg_samples 2
+	#net_avg_samples 2
+
+
+#xft?
+	use_xft yes
+	#xftfont mono space:size=11
+	#xftfont TSCu_Comic:size=13
+	xftfont Ubuntu:size=12
+	override_utf8_locale yes
+	xftalpha 0
+
+# settings
+	#use_spacer right
+	#show_graph_scale no
+	#show_graph_range no
+	#pad_percents 0 #symbol spacing after numbers
+
+# color
+	default_color white
+	default_shade_color black
+	default_outline_color white
+
+
+TEXT
+${if_running emacs}
+emacs -nw
+${hr 2}
+
+M-x: execute-extended-command ${hr 1}
+ispell-region
+eval-buffer
+
+repeat: C-u <times> char
+${endif}
+
+${if_running gnome-terminal}
+Process id
+${hr 2}
+$$$$ Current Process ID
+$$? Exit status
+$$! PID bgprocess
+$$- Options given to the shell.
+!$$ last argument
+${endif}

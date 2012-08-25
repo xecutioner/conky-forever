@@ -1,0 +1,6 @@
+clast - show login summary
+
+clast shows you the login in information. It just filter (grep command)
+output.
+
+Handy when you can know who have SSH access to your system.
