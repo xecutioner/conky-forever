@@ -22,8 +22,8 @@ My Conky Setting!
 ## Up & Running
 Add following lines to auto start.
 
-cd "/to/conky-forever/path/"
-"./run.sh" &
+    cd "/to/conky-forever/path/";
+    "./run.sh" &
 
 
 ## Screenshots
