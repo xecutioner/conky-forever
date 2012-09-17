@@ -75,4 +75,4 @@ TEXT
 ${image ./arch.png }\
 ${offset 98}${font TSCu_Comic:size=20} $uptime ${font}\
 ${font Ubuntu Condensed:size=11}
-${exec last -a | grep -e ":0$" -e ":0.0" -v | head -7 | sed -e 's/ \+/ /g' -e 's/Sat//g' -e 's/^/                                     /'}
+${exec last -a | grep -e ":0$" -e ":0.0" -v | head -6 | sed -e 's/ \+/ /g' -e 's/^/                                     /'}

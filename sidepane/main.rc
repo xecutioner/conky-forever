@@ -73,14 +73,10 @@
 
 
 TEXT
-${alignr 65}${color yellow}${font Weather:size=30}y${font}\
-${voffset -24}${color}${font Ubuntu:size=25}${acpitemp}°C
-${font}
 ${if_existing /proc/net/route 0} # change it to "/sys/class/net"
 ${color}${font}↓\
 ${font Yytrium Dioxide:size=13}\
 Network${font size=14}↑(uptime) ${font}${hr 4}
- ${color yellow} ${exec ./netstat.sh }
 ${if_existing /proc/net/route ppp0}\
 	${color gray}${font MarVoSym:size=17}T${font}\
 ${color} ${addr ppp0}\
@@ -128,16 +124,14 @@ ${endif}\
 ${color}${font Poky:size=16}a\
 ${font Zero Velocity BRK:size=14}\
  load ${font}${hr 4}
-	${color}$running_processes/$processes \
-${color grey}CPU:$color $cpu% ${cpubar}
-	${color grey}RAM:$color $memperc% ${membar 6,100} \
-${alignr}${color grey}Swap:$color $swapperc% ${swapbar 6,70}
-\
-${color green} Name ${alignr 55}PID${alignr 20}CPU%${alignr}MEM%
+ ${acpitemp}${offset -8}°C\
+${color grey} Swap:$color $swapperc%${voffset -20}
+${offset 210}${cpubar 6,70} ${membar}
+${color green} Name $running_processes${offset -20}/$processes ${alignr 55}PID${alignr 5}$cpu% CPU ${alignr}$memperc% RAM
 ${font}${color lightblue}\
-   ${top name 1}${alignc -80}${top pid 1}${alignr 20}${top cpu 1}${alignr 5}${top mem 1}
-   ${top name 2}${alignc -80}${top pid 2}${alignr 20}${top cpu 2}${alignr 5}${top mem 2}
-   ${top name 3}${alignc -80}${top pid 3}${alignr 20}${top cpu 3}${alignr 5}${top mem 3}
-   ${top name 4}${alignc -80}${top pid 4}${alignr 20}${top cpu 4}${alignr 5}${top mem 4}
+  ${top name 1}${top pid 1}${alignc}${top cpu 1}${alignr 15}${top mem 1}
+  ${top name 2}${top pid 2}${alignc}${top cpu 2}${alignr 15}${top mem 2}
+  ${top name 3}${top pid 3}${alignc}${top cpu 3}${alignr 15}${top mem 3}
+  ${top name 4}${top pid 4}${alignc}${top cpu 4}${alignr 15}${top mem 4}
 ${color}$hr\
 
