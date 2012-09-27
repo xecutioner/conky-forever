@@ -1,6 +1,8 @@
 # conky-forever
 
-My Conky Setting! 
+My Conky Setting!
+
+NOTE: "Compiz" & "xcompmgr" might add the shadows to you conky windows so you might need to right an exception.
 
 ## Dependencies
 
@@ -10,9 +12,11 @@ My Conky Setting!
 
 ## Fonts
 
+You might need to download these fonts. Google them.
+
 * MarVoSym
 * PizzaDude Bullets
-* Poky
+* Poky (must)
 * TSCu_Comic
 * Ubuntu
 * Ubuntu Condensed
@@ -22,7 +26,8 @@ My Conky Setting!
 
 
 ## Up & Running
-Add following lines to auto start.
+
+Add following lines to auto start or try it to just test it running.
 
     cd "/to/conky-forever/path/";
     "./run.sh" &
