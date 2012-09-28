@@ -16,7 +16,7 @@ You might need to download these fonts. Google them.
 
 * MarVoSym
 * PizzaDude Bullets
-* Poky (must)
+* Poky https://github.com/helmuthdu/conky_colors/blob/master/fonts/conkycolors/Poky.ttf
 * TSCu_Comic
 * Ubuntu
 * Ubuntu Condensed
