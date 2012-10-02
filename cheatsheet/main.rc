@@ -56,8 +56,6 @@
 
 #xft?
 	use_xft yes
-	#xftfont mono space:size=11
-	#xftfont TSCu_Comic:size=13
 	xftfont Ubuntu:size=12
 	override_utf8_locale yes
 	xftalpha 0

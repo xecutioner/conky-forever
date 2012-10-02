@@ -10,15 +10,12 @@ My Conky Setting!
 
 ## Fonts
 
-* MarVoSym
 * PizzaDude Bullets
 * Poky
 * TSCu_Comic
 * Ubuntu
 * Ubuntu Condensed
-* Weather
 * Yytrium Dioxide
-* Zero Velocity BRK
 
 
 ## Up & Running

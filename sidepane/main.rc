@@ -75,7 +75,7 @@
 TEXT
 ${if_existing /proc/net/route 0} # change it to "/sys/class/net"
 ${color}${font}↓\
-${font Yytrium Dioxide:size=13}\
+${font serif:size=13}\
 Network${font size=14}↑(uptime) ${font}${hr 4}
 ${if_existing /proc/net/route ppp0}\
 	${color gray}${font MarVoSym:size=17}T${font}\
@@ -122,7 +122,7 @@ ${endif}\
 \
 \
 ${color}${font Poky:size=16}a\
-${font Zero Velocity BRK:size=14}\
+${font serif:size=14}\
  load ${font}${hr 4}
  ${acpitemp}${offset -8}°C\
 ${color grey} Swap:$color $swapperc%${voffset -20}

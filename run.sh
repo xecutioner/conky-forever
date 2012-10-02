@@ -1,9 +1,9 @@
 #!/bin/bash
 
-list=`ls -l | awk '/^d/ { print $9 }'`
-
-for i in $list; do
-    cd $i;
-    conky conky -c "./main.rc" &
-    cd ..
+for i in *; do
+    if [ -d "$i" ]; then
+	cd $i;
+	conky conky -c "./main.rc" &
+	cd ..
+    fi
 done
