@@ -20,9 +20,7 @@ You might need to download these fonts. Google them.
 * TSCu_Comic
 * Ubuntu
 * Ubuntu Condensed
-* Weather
 * Yytrium Dioxide
-* Zero Velocity BRK
 
 
 ## Up & Running

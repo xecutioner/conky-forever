@@ -1,7 +1,7 @@
 #
-# cheatsheet
+# ondesx - default theme
 # by Rho <rho.rhoit@gmail.com>
-# 
+# Fri Dec  9 04:45:21 NPT 2011
 #
 
 
@@ -10,9 +10,9 @@
 	background no #daemon
 
 # position
-	alignment top_left
+	alignment bottom_right
 	gap_x 15
-	gap_y 160
+	gap_y 90
 	maximum_width 350
 	minimum_size 350
 
@@ -21,17 +21,17 @@
 	text_buffer_size 256 #performance
 	update_interval 1
 	no_buffers yes #Subtract from used memory
-	# imlib_cache_size 0 #Force images redraw on change.
+	imlib_cache_size 0 #Force images redraw on change.
 
 # window manager
 	own_window_class conky
-	own_window_title cheetsheet
+	own_window_title pinku
 
 	own_window_transparent yes
 	own_window_argb_visual no # no for semi transpancy
 	own_window_argb_value 128
 
-	own_window yes #required in Desktop Environment
+	own_window yes #required in nautilus
 	own_window_type normal
 	own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
@@ -50,21 +50,21 @@
 	extra_newline no
 
 #sample
-	#cpu_avg_samples 2
-	#net_avg_samples 2
+	cpu_avg_samples 2
+	net_avg_samples 2
 
 
 #xft?
 	use_xft yes
-	xftfont Ubuntu:size=12
+	xftfont mono space:size=11
 	override_utf8_locale yes
 	xftalpha 0
 
 # settings
-	#use_spacer right
-	#show_graph_scale no
-	#show_graph_range no
-	#pad_percents 0 #symbol spacing after numbers
+	use_spacer right
+	show_graph_scale no
+	show_graph_range no
+	pad_percents 0 #symbol spacing after numbers
 
 # color
 	default_color white
@@ -73,26 +73,5 @@
 
 
 TEXT
-${if_running emacs}
-emacs -nw
-${hr 2}
-
-M-x: execute-extended-command ${hr 1}
-ispell-region
-eval-buffer
-
-repeat: C-u <times> char
-cut: C-w
-copy: M-w
-paste: C-y
-${endif}
-
-${if_running gnome-terminal}
-Process id
-${hr 2}
-$$$$ Current Process ID
-$$? Exit status
-$$! PID bgprocess
-$$- Options given to the shell.
-!$$ last argument
-${endif}
+${color yellow}${exec ./main.sh --app}
+${color red}${exec ./main.sh --con}

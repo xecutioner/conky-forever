@@ -1,0 +1,3 @@
+show masquerade
+
+performance tuning try to use only one netstat
