@@ -33,4 +33,7 @@ Add following lines to auto start or try it to just test it running.
 
 ## Screenshots
 
+check out the wiki-page for more!
+https://github.com/rhoit/conky-forever/wiki
+
 ![2012-10-03](https://lh5.googleusercontent.com/-iTxKedODpIw/UGv36LsVSlI/AAAAAAAACgA/FrpY1D9X7h8/s800/2012-10-03-141140_1280x800_scrot.png)
