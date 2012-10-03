@@ -33,4 +33,4 @@ Add following lines to auto start or try it to just test it running.
 
 ## Screenshots
 
-![](https://lh6.googleusercontent.com/-HOfhuZokmgA/UDhp_9WSI8I/AAAAAAAACfo/mOW9NBconOg/s800/screenshot.png)
+![2012-10-03](https://lh5.googleusercontent.com/-iTxKedODpIw/UGv36LsVSlI/AAAAAAAACgA/FrpY1D9X7h8/s800/2012-10-03-141140_1280x800_scrot.png)
