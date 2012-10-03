@@ -3,7 +3,7 @@
 for i in *; do
     if [ -d "$i" ]; then
 	cd $i;
-	conky conky -c "./main.rc" &
+	conky -qc "./main.rc" &
 	cd ..
     fi
 done
