@@ -41,7 +41,7 @@
 	draw_graph_borders yes
 	draw_outline no
 	draw_shades yes
-	border_inner_margin 10
+	border_inner_margin 0
 
 #conky console
 	out_to_console no
