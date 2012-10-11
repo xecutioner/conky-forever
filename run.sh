@@ -4,7 +4,7 @@ cd conkyrc
 for i in *; do
     if [ -d "$i" ]; then
 	cd $i;
-	conky -qc "./main.rc" &
+	conky -c "./main.rc" &
 	cd ..
     fi
 done
