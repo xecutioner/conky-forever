@@ -1,10 +1,3 @@
-#
-# ondesx - default theme
-# by Rho <rho.rhoit@gmail.com>
-# Fri Dec  9 04:45:21 NPT 2011
-#
-
-
 # process
 	total_run_times 0 #run conky forever
 	background no #daemon
@@ -126,12 +119,12 @@ ${font serif:size=14}\
  load ${font}${hr 4}
  ${acpitemp}${offset -8}°C\
 ${color grey} Swap:$color $swapperc%${voffset -20}
-${offset 210}${cpubar 6,70} ${membar}
-${color green} Name $running_processes${offset -20}/$processes ${alignr 55}PID${alignr 5}$cpu% CPU ${alignr}$memperc% RAM
+${offset 210}${cpubar 6,60}${offset 8} ${membar}
+${color green} Name $running_processes${offset -20}/$processes ${alignr 15}CPU $cpu%${alignr}RAM $memperc%
 ${font}${color lightblue}\
-  ${top name 1}${top pid 1}${alignc}${top cpu 1}${alignr 15}${top mem 1}
-  ${top name 2}${top pid 2}${alignc}${top cpu 2}${alignr 15}${top mem 2}
-  ${top name 3}${top pid 3}${alignc}${top cpu 3}${alignr 15}${top mem 3}
-  ${top name 4}${top pid 4}${alignc}${top cpu 4}${alignr 15}${top mem 4}
+  ${top name 1}${alignr 43}${top cpu 1}${alignr 19}${top mem 1}
+  ${top name 2}${alignr 43}${top cpu 2}${alignr 19}${top mem 2}
+  ${top name 3}${alignr 43}${top cpu 3}${alignr 19}${top mem 3}
+  ${top name 4}${alignr 43}${top cpu 4}${alignr 19}${top mem 4}
 ${color}$hr\
 

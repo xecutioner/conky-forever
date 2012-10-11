@@ -1,20 +1,13 @@
-#
-# ondesx - default theme
-# by Rho <rho.rhoit@gmail.com>
-# Fri Dec  9 04:45:21 NPT 2011
-#
-
-
 # process
 	total_run_times 0 #run conky forever
 	background no #daemon
 
 # position
-	alignment bottom_right
-	gap_x 15
-	gap_y 90
-	maximum_width 350
-	minimum_size 350
+	alignment top_right
+	#gap_x 15
+	gap_y 40
+	maximum_width 455
+	minimum_size 455 115
 
 # engine
 	double_buffer yes #reduces flicker
@@ -25,7 +18,7 @@
 
 # window manager
 	own_window_class conky
-	own_window_title pinku
+	own_window_title archy
 
 	own_window_transparent yes
 	own_window_argb_visual no # no for semi transpancy
@@ -41,7 +34,7 @@
 	draw_graph_borders yes
 	draw_outline no
 	draw_shades yes
-	border_inner_margin 0
+	border_inner_margin 10
 
 #conky console
 	out_to_console no
@@ -73,5 +66,7 @@
 
 
 TEXT
-${color yellow}${exec ./main.sh --app}
-${color red}${exec ./main.sh --con}
+${image ./arch.png }\
+${offset 98}${font TSCu_Comic:size=20} $uptime ${font}\
+${font Ubuntu Condensed:size=11}
+${exec last -a | sed "/:0\?.\?0$/d; s/ \+/ /g; s/^/$(printf "%38s")/" | head -6}

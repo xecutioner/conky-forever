@@ -1,26 +1,24 @@
-# Rythmbox
-
 # process
 	total_run_times 0 #run conky forever
 	background no #daemon
 
 # position
-	alignment mm
-	#gap_x 0
-	#gap_y -12
-#	maximum_width 500
-	minimum_size 250
+	alignment top_left
+	gap_x 15
+	gap_y 160
+	maximum_width 350
+	minimum_size 350
 
 # engine
 	double_buffer yes #reduces flicker
 	text_buffer_size 256 #performance
 	update_interval 1
 	no_buffers yes #Subtract from used memory
-	imlib_cache_size 0 #Force images redraw on change.
+	# imlib_cache_size 0 #Force images redraw on change.
 
 # window manager
 	own_window_class conky
-	own_window_title albumart
+	own_window_title cheetsheet
 
 	own_window_transparent yes
 	own_window_argb_visual no # no for semi transpancy
@@ -35,9 +33,8 @@
 	border_width 1
 	draw_graph_borders yes
 	draw_outline no
-
 	draw_shades yes
-	border_inner_margin 0
+	border_inner_margin 10
 
 #conky console
 	out_to_console no
@@ -52,9 +49,8 @@
 
 #xft?
 	use_xft yes
-	override_utf8_locale no
-	xftfont WenQuanYi Zenhei:size:12
-	#Ubuntu:size=11
+	xftfont Ubuntu:size=12
+	override_utf8_locale yes
 	xftalpha 0
 
 # settings
@@ -68,13 +64,30 @@
 	default_shade_color black
 	default_outline_color white
 
-TEXT
-${if_running rhythmbox}
-#${image /home/rho/.cache/rhythmbox/album-art/000000a1 -s 250x250 -f 5}
-${offset 260} ${exec rhythmbox-client --no-start --print-playing-format "%te / %td"}
-${offset 260} ${exec rhythmbox-client --no-start --print-playing-format %tt}
-${offset 260} ${exec rhythmbox-client --print-playing-format %aa}
-${offset 260} ${exec rhythmbox-client --print-playing-format %at} \
-(${exec rhythmbox-client --no-start --print-playing-format %ay})
 
+TEXT
+${if_running emacs}
+emacs -nw
+${hr 2}
+
+M-x: execute-extended-command ${hr 1}
+ispell-region
+eval-buffer
+
+repeat: C-u <times> char
+cut: C-w
+copy: M-w
+paste: C-y
+
+window switch: C-x o
+${endif}
+
+${if_running gnome-terminal}
+Process id
+${hr 2}
+$$$$ Current Process ID
+$$? Exit status
+$$! PID bgprocess
+$$- Options given to the shell.
+!$$ last argument
 ${endif}

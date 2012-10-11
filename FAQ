@@ -1,0 +1,19 @@
+FAQ
+
+Q. What is conky-forever?
+A. Its just a simple collection of conky configuration and scripts.
+
+Q. Can I modify the conky-forever scripts?
+A. Yes, sure you can.
+
+Q. Why are the Fonts preloaded?
+A. I don't own those fonts.
+
+Q. Why my distro logo is not shown?
+A. I don't use all the distro's, i became too lazy.
+
+Q. Why my clock is not working?
+A. clock requries the conky-lua package.
+
+Q. Why does it detect anything other than rhythmbox?
+A. I use rhythmbox, you are most welcome to build one your yourself.
