@@ -1,6 +1,6 @@
 #!/bin/bash
 
-netstat -npt > /tmp/netstat.conky
+netstat -npt > /tmp/netstat.conky 2> /dev/null
 
 function application {
      list=`sed -n 's/.* [0-9]\+\/\(.*\)-\?$/\1/p' /tmp/netstat.conky | sort | uniq -c| sort -rn`
