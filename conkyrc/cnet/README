@@ -1,2 +1,7 @@
-sidepane - give a classic side pane like conky!
+cnet - network monitor!
 
+In progress of building....
+
+cnet is based on pure shell scripting.. just few lines of command in constant monitor.
+cnet can display's many programs are connecting to the outgoing network and the active in ports.
+Really nice to have running if you r in server! :D
