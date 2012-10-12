@@ -69,19 +69,10 @@ TEXT
 ${if_running emacs}
 emacs -nw
 ${hr 2}
-
-M-x: execute-extended-command ${hr 1}
-ispell-region
-eval-buffer
-
 repeat: C-u <times> char
-cut: C-w
-copy: M-w
-paste: C-y
-
-window switch: C-x o
-${endif}
-
+cut[C-w], copy[M-w], paste[C-y]
+switch win: C-x o
+${endif}\
 ${if_running gnome-terminal}
 Process id
 ${hr 2}
@@ -90,4 +81,5 @@ $$? Exit status
 $$! PID bgprocess
 $$- Options given to the shell.
 !$$ last argument
+find <pattern> -exec <command> {} \;
 ${endif}
