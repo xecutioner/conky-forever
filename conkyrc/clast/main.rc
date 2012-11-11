@@ -69,5 +69,4 @@ TEXT
 ${image ./arch.png }\
 ${offset 98}${font TSCu_Comic:size=20} $uptime ${font}\
 ${font Ubuntu Condensed:size=11}
-${exec last -a | sed "/:0\?.\?0$/d; s/ \+/ /g; s/^/$(printf "%38s")/" | head -6}\
-${exec ./bat.sh}
+${exec last -a | sed "/:0\?.\?0$/d; s/ \+/ /g; s/^/$(printf "%38s")/" | head -6}
