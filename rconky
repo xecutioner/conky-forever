@@ -1,0 +1,10 @@
+#!/bin/bash
+
+list=`pgrep -U $USER conky`
+if ! [ "$list" == "" ]; then
+    kill $list
+fi
+
+path=`ls -al rconky | sed 's/.*> \(.*\)rconky/\1/'`
+cd $path
+./run.sh
