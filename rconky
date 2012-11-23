@@ -1,7 +1,8 @@
 #!/bin/bash
 
 list=`pgrep -U $USER conky`
-if ! [ "$list" == "" ]; then
+
+if [ "$list" != "" ]; then
     kill $list
 fi
 
